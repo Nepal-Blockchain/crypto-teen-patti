@@ -4,11 +4,11 @@
 <head>
   <title>Crypto Teen Patti (ETH/RINKEBY)</title>
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-  <script src="./app.js"></script>
 </head>
 
 <body>
-  <h1>Play Teen Patti</h1>
+
+  <h1>Crypto Teen Patti (Rinkeby Testnet)</h1>
   <div id="playDiv" class="playDiv ">
     Your Address : <span id="userAddr"></span>
     <br>Balance : <span id="balance"> </span> SZABO
@@ -23,10 +23,10 @@
     <br><label>Gas Price : </label>
     <input type="number" min="3" max="10" id="playGas" value="5"></input> GWEI
     <br><br><label>Estimated Gas : </label>
-    <span id="estGas"></span> SZABO<br><br><button id="playButton" onclick="App.play()">PLAY</button>
+    <span id="estGas"></span> SZABO<br><br><button id="playButton" onclick="App.play()" disabled>PLAY</button>
   </div>
 
-  <div style="" id="statDiv" class="statDiv">
+  <div id="statDiv" class="statDiv">
     <p>
       Contract : <a target="_blank" href="https://rinkeby.etherscan.io/address/0xC0FFeE9d5c668307C6D0493d2DeC02BF8dB17292">0xC0FFeE9d5c668307C6D0493d2DeC02BF8dB17292</a>
       (RINKEBY TESTNET)
@@ -38,9 +38,27 @@
       <br>Total Games : <span id="totalGames"></span>
       <br> Win % : <span id="winLoss"></span>
     </p>
-
     <h4 id="status"></h4>
+  </div>
 
+  <div style="clear:both;">
+    <h1>Last 25 games</h1>
+    <table id="logTable">
+      <thead>
+        <tr>
+          <th style="width:8%;">GID</th>
+          <th>ADDRESS</th>
+          <th style="width:12%;">GAME/SZABO</th>
+          <th style="width:15%;">HOUSE</th>
+          <th style="width:15%;">PLAYER</th>
+          <th style="width:12%;">RESULT</th>
+          <th>CALLBACK</th>
+          <th>RANDOM</th>
+        </tr>
+      </thead>
+      <tbody id="logBook">
+      </tbody>
+    </table>
   </div>
   <div style="clear:both; display: none;">
 
@@ -102,27 +120,12 @@
       </tbody>
     </table>
   </div>
-  <div style="clear:both;">
-  <h1>Last 25 games</h1>
-  <table id="logTable">
-    <thead>
-      <tr>
-        <th style="width:8%;">GID</th>
-        <th>ADDRESS</th>
-        <th style="width:12%;">GAME/SZABO</th>
-        <th style="width:15%;">HOUSE</th>
-        <th style="width:15%;">PLAYER</th>
-        <th style="width:12%;">RESULT</th>
-        <th>CALLBACK</th>
-        <th>RANDOM</th>
-      </tr>
-    </thead>
-    <tbody id="logBook">
-    </tbody>
-  </table>
+  <a href="https://github.com/nepal-blockchain/crypto-teen-patti" target="_blank">
+    <img style="position: fixed; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67"
+      alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png">
+  </a>
 
-  </div>
-
+  <script src="./app.js"></script>
 </body>
 
 </html>
