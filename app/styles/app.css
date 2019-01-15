@@ -1,0 +1,370 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #2c5a39;
+  padding: 5px;
+}
+
+label {
+  display: inline-block;
+}
+
+input[type=number] {
+  text-align: center;
+}
+
+input[type=radio] {
+  width: 25px;
+  height: 25px;
+}
+
+input {
+  width: 150px;
+  height: 25px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #666;
+}
+a {
+  color: #000000;
+  text-decoration: underline;
+}
+table {
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+tr>th {
+  background-color: #878700;
+  overflow-x: hidden;
+  border-top-left-radius: 50%;
+  height:45px;
+}
+ 
+tr > td {
+  border-bottom: 3pt solid #000000;
+  border-right: 2pt solid #000000;
+  border-bottom-right-radius: 30%;
+  overflow-x: hidden;
+  height: 50px;
+}
+
+button {
+  font-size: 16px;
+  padding: 5px;
+  width:100px;
+  height:50px;
+  background-color: #ffffff50;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h1,
+h2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #AAA;
+  font-size: 32px;
+}
+
+h3 {
+  font-weight: normal;
+  color: #AAA;
+  font-size: 24px;
+}
+
+.black {
+  color: black;
+}
+.white {
+  color: white;
+}
+
+.hint {
+  color: #666;
+}
+
+.tinyCard {
+  font-size: 7px;
+}
+
+.stats{
+  font-size: 1.5em;
+  color: #fff;
+}
+@media only screen and (min-width: 786px) {
+  #playDiv {
+    text-align: left;
+    float: right;
+    width: 40%;
+  }
+
+  #statDiv {
+    text-align: left;
+    float: left;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  #playDiv {
+    width: 100%;
+    clear: both;
+    float: none;
+  }
+
+  #statDiv {
+    clear: both;
+    float: none;
+    width: 100%;
+  }
+
+}
+
+[class*="card_"]:after {
+  content: "\00a0"
+}
+
+[class*="card_"]:before {
+  display: inline-block;
+  font-style: normal;
+  font-size: 3.3em;
+  font-weight: normal;
+  line-height: 1.3;
+  width: min-content;
+  border-radius: 15%;
+  padding-bottom: 3px;
+  background-color: #ffffff;
+}
+
+[class*="card_2_"],
+[class*="card_1_"]:before {
+  color: #770000;
+}
+
+[class*="card_3_"],
+[class*="card_0_"]:before {
+  color: #000000;
+}
+
+.card_0_0:before {
+  content: "\1F0A0";
+}
+
+.card_0_1:before {
+  content: "\1F0A1";
+}
+
+.card_0_2:before {
+  content: "\1F0A2";
+}
+
+.card_0_3:before {
+  content: "\1F0A3";
+}
+
+.card_0_4:before {
+  content: "\1F0A4";
+}
+
+.card_0_5:before {
+  content: "\1F0A5";
+}
+
+.card_0_6:before {
+  content: "\1F0A6";
+}
+
+.card_0_7:before {
+  content: "\1F0A7";
+}
+
+.card_0_8:before {
+  content: "\1F0A8";
+}
+
+.card_0_9:before {
+  content: "\1F0A9";
+}
+
+.card_0_10:before {
+  content: "\1F0AA";
+}
+
+.card_0_11:before {
+  content: "\1F0AB";
+}
+
+.card_0_12:before {
+  content: "\1F0AD";
+}
+
+.card_0_13:before {
+  content: "\1F0AE";
+}
+
+.card_1_1:before {
+  content: "\1F0B1";
+}
+
+.card_1_2:before {
+  content: "\1F0B2";
+}
+
+.card_1_3:before {
+  content: "\1F0B3";
+}
+
+.card_1_4:before {
+  content: "\1F0B4";
+}
+
+.card_1_5:before {
+  content: "\1F0B5";
+}
+
+.card_1_6:before {
+  content: "\1F0B6";
+}
+
+.card_1_7:before {
+  content: "\1F0B7";
+}
+
+.card_1_8:before {
+  content: "\1F0B8";
+}
+
+.card_1_9:before {
+  content: "\1F0B9";
+}
+
+.card_1_10:before {
+  content: "\1F0BA";
+}
+
+.card_1_11:before {
+  content: "\1F0BB";
+}
+
+.card_1_12:before {
+  content: "\1F0BD";
+}
+
+.card_1_13:before {
+  content: "\1F0BE";
+}
+
+.card_2_1:before {
+  content: "\1F0C1";
+}
+
+.card_2_2:before {
+  content: "\1F0C2";
+}
+
+.card_2_3:before {
+  content: "\1F0C3";
+}
+
+.card_2_4:before {
+  content: "\1F0C4";
+}
+
+.card_2_5:before {
+  content: "\1F0C5";
+}
+
+.card_2_6:before {
+  content: "\1F0C6";
+}
+
+.card_2_7:before {
+  content: "\1F0C7";
+}
+
+.card_2_8:before {
+  content: "\1F0C8";
+}
+
+.card_2_9:before {
+  content: "\1F0C9";
+}
+
+.card_2_10:before {
+  content: "\1F0CA";
+}
+
+.card_2_11:before {
+  content: "\1F0CB";
+}
+
+.card_2_12:before {
+  content: "\1F0CD";
+}
+
+.card_2_13:before {
+  content: "\1F0CE";
+}
+
+.card_3_1:before {
+  content: "\1F0D1";
+}
+
+.card_3_2:before {
+  content: "\1F0D2";
+}
+
+.card_3_3:before {
+  content: "\1F0D3";
+}
+
+.card_3_4:before {
+  content: "\1F0D4";
+}
+
+.card_3_5:before {
+  content: "\1F0D5";
+}
+
+.card_3_6:before {
+  content: "\1F0D6";
+}
+
+.card_3_7:before {
+  content: "\1F0D7";
+}
+
+.card_3_8:before {
+  content: "\1F0D8";
+}
+
+.card_3_9:before {
+  content: "\1F0D9";
+}
+
+.card_3_10:before {
+  content: "\1F0DA";
+}
+
+.card_3_11:before {
+  content: "\1F0DB";
+}
+
+.card_3_12:before {
+  content: "\1F0DD";
+}
+
+.card_3_13:before {
+  content: "\1F0DE";
+}

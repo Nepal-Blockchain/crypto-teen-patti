@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Crypto Teen Patti (ETH/RINKEBY)</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <script src="./app.js"></script>
+</head>
+
+<body>
+  <h1>Play Teen Patti</h1>
+  <div id="playDiv" class="playDiv ">
+    Your Address : <span id="userAddr"></span>
+    <br>Balance : <span id="balance"> </span> SZABO
+    <br>
+    <label> Game Type : </label>
+    <input type="radio" id="left1" name="side" value="left" checked>
+    <label for="left1">HIGH</label>
+    <input type="radio" id="right1" name="side" value="right">
+    <label for="right1">LOW</label>
+    <br><label for="amount">Play Amount : </label>
+    <input type="number" id="playAmount" min="14000" max="100000" value="21000" step="42"></input> SZABO
+    <br><label>Gas Price : </label>
+    <input type="number" min="3" max="10" id="playGas" value="5"></input> GWEI
+    <br><br><label>Estimated Gas : </label>
+    <span id="estGas"></span> SZABO<br><br><button id="playButton" onclick="App.play()">PLAY</button>
+  </div>
+
+  <div style="" id="statDiv" class="statDiv">
+    <p>
+      Contract : <a target="_blank" href="https://rinkeby.etherscan.io/address/0xC0FFeE9d5c668307C6D0493d2DeC02BF8dB17292">0xC0FFeE9d5c668307C6D0493d2DeC02BF8dB17292</a>
+      (RINKEBY TESTNET)
+      <br>Min Bet : <span id="minBet"></span> SZABO
+      <br>Max Bet : <span id="maxBet"></span> SZABO
+      <br>Pending : <span id="pendBet"></span> SZABO
+      <br>Game Bal : <span id="gameBal"></span> SZABO
+      <br>Win Games : <span id="winGame"></span>
+      <br>Total Games : <span id="totalGames"></span>
+      <br> Win % : <span id="winLoss"></span>
+    </p>
+
+    <h4 id="status"></h4>
+
+  </div>
+  <div style="clear:both; display: none;">
+
+    <h1>Your last 5 games</h1>
+    <table>
+      <tbody style="font-size:1.5ch;border: 1pt solid black;" id="logUser">
+        <tr id="gameUser">
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+        <tr id="houseUser">
+          <td>
+            <i class="card_0_0"></i>
+            <i class="card_0_0"></i>
+            <i class="card_0_0"></i>
+          </td>
+          <td>b</td>
+          <td>
+            <i class="card_0_0"></i>
+            <i class="card_0_0"></i>
+            <i class="card_0_0"></i>
+          </td>
+          <td>b</td>
+          <td>
+            <i class="card_0_0"></i>
+            <i class="card_0_0"></i>
+            <i class="card_0_0"></i>
+          </td>
+        </tr>
+        <tr id="resultUser">
+          <td>a</td>
+          <td>b</td>
+          <td>a</td>
+          <td>b</td>
+          <td>a</td>
+        </tr>
+        <tr id="playUser">
+          <td>
+            <i class="card_0_0"></i>
+            <i class="card_0_0"></i>
+            <i class="card_0_0"></i>
+          </td>
+          <td>b</td>
+          <td>
+            <i class="card_0_0"></i>
+            <i class="card_0_0"></i>
+            <i class="card_0_0"></i>
+          </td>
+          <td>b</td>
+          <td>
+            <i class="card_0_0"></i>
+            <i class="card_0_0"></i>
+            <i class="card_0_0"></i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="clear:both;">
+  <h1>Last 25 games</h1>
+  <table id="logTable">
+    <thead>
+      <tr>
+        <th style="width:8%;">GID</th>
+        <th>ADDRESS</th>
+        <th style="width:12%;">GAME/SZABO</th>
+        <th style="width:15%;">HOUSE</th>
+        <th style="width:15%;">PLAYER</th>
+        <th style="width:12%;">RESULT</th>
+        <th>CALLBACK</th>
+        <th>RANDOM</th>
+      </tr>
+    </thead>
+    <tbody id="logBook">
+    </tbody>
+  </table>
+
+  </div>
+
+</body>
+
+</html>
